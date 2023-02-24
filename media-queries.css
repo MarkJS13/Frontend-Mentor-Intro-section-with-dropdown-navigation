@@ -1,0 +1,277 @@
+@media only screen and (max-width: 1200px) {
+    .dropdown-features {
+        left: 12%;
+    }
+    
+    
+    .dropdown-company {
+        left: 27%;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .dropdown-features {
+        left: 12%;
+        width: 115px;
+
+    }
+    .dropdown-features li {
+        font-size: 11px;
+        gap: 8px;
+    }
+    
+    
+    .dropdown-company {
+        left: 30%;
+        width: 90px;
+    }
+
+    .dropdown-company li {
+        font-size: 10px;
+    
+    }
+
+    .grid1 .welcome-text {
+        gap: 35px;
+    }
+
+    .grid1 .welcome-text h1 {
+        font-size: 55px;
+    }
+
+
+    .grid1 .welcome-text p {
+        font-size: 14px;
+    }
+
+
+
+    .grid1 .learn-more {
+        font-size: 14px;
+
+    }
+
+    .grid1 button {
+        padding: 6px 16px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+
+    .sponsors {
+        gap: 20px;
+
+    }
+
+    .sponsors img{
+        width: 70px;
+        
+    }
+        
+
+
+}
+
+
+@media only screen and (max-width: 890px) {
+
+    header {
+        padding: 25px;
+    }
+    
+    
+    .menu {
+        gap: 25px;
+    }
+    
+    .menu li {
+        font-size: 12px;
+    }
+
+    .signup {
+        gap: 20px;
+        font-size: 12px;
+    }
+    
+    .signup li:nth-child(2) {
+        border: 1px solid var(--medium-gray);
+        padding: 6px 12px;
+        border-radius: 6px;
+    }
+
+}
+
+@media only screen and (max-width: 818px) {
+    main {
+        padding: 0;
+        margin: 0 40px;
+        margin-top: 40px;
+        
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .container {
+        height: auto;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    #header li, .signup {
+        font-size: 12px;
+    }
+
+    #header {
+        align-items: center;
+        gap: 5px;
+        padding: 25px 20px;
+    }
+    #header .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    
+
+    main {
+        grid-template-rows: 90vh auto;
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 0;
+        margin-top: 0;
+
+    }
+
+    .grid1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: center;
+        padding: 0;
+        gap: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid1 .welcome-text {
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid1 .welcome-text h1 {
+       font-size: 55px;
+    }
+
+    .grid1 .welcome-text h1 span {
+        display: inline;
+    }
+
+    .grid1 .welcome-text p {
+        font-size: 15px;
+        text-align: center;
+     }
+
+     .grid1 button {
+        padding: 12px 24px;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 15px;
+    }
+
+    .sponsors {
+        display: flex;
+        gap: 40px;
+    }
+
+    
+    .grid2 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background: url('images/image-hero-mobile.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+    
+}
+
+@media only screen and (max-width: 623px) {
+    #header {
+        padding-bottom: 0;
+    }
+    #header li, .signup {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu img {
+        width: 40px;
+    }
+    
+    main {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        
+    }
+
+    .grid1 {
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .grid1 .welcome-text h1 {
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    .grid1 .welcome-text p {
+        font-size: 13px;
+
+    }
+
+    .grid1 button {
+        padding: 8px 18px;
+        font-size: 12px;
+        border-radius: 12px;
+    }
+
+    .sponsors {
+        gap: 30px;
+    }
+
+    .sponsors img {
+        width: 58px;
+    }
+
+}
+
+@media only screen and (max-width: 474px) {
+
+    main {
+        grid-template-rows: 70vh auto;
+    }
+
+    .grid2 {
+        background-size: contain;
+        background-position: center;
+    }
+
+    
+}

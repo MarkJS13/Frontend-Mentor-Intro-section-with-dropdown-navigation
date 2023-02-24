@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+    height: 100vh;
+}
+
+ul, li, a, p, h1, h2, h3, h4, h5, h6{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--almost-white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 45px;
+    color: var(--medium-gray);
+}
+
+.list-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu li {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.menu li:hover {
+    color: var(--almost-black);
+    cursor: grab;
+    font-weight: 600;
+}
+
+
+.menu li span {
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    margin-left: 4px;
+    color: var(--almost-black);
+    font-weight: 600;
+}
+
+/*********** dropdown ********/
+
+
+
+
+.dropdown-features {
+    position: absolute;
+    top: 9%;
+    left: 9%;
+    background-color: white;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px 5px #9999994d;
+}
+
+
+.dropdown-features li {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.dropdown-company {
+    position: absolute;
+    top: 9%;
+    left: 21%;
+    background-color: white;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 18px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 10px 5px #9999994d;
+}
+
+.dropdown-company li {
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+
+.hide-dropdown {
+    display: none;
+    
+}
+
+.highlight-list {
+    color: var(--almost-black) !important;
+    font-weight: 600 !important;
+    
+}
+
+/*** dropdown ***/
+
+.logo {
+    color: var(--almost-black);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu i {
+    font-size: 35px;
+    color: var(--almost-black);
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 13px;
+}
+
+.signup li:nth-child(2) {
+    border: 2px solid var(--medium-gray);
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+.signup li:hover {
+    color: var(--almost-black);
+    cursor: grab;
+    font-weight: 600;
+}
+
+
+main {
+    margin-top: 50px;
+    padding: 0 160px;
+    display: grid;
+    grid-template-columns: minmax(auto, 1.5fr) minmax(300px, 1fr);
+    
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 80%;
+}
+
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 80px;
+    padding-top: 60px;
+}
+
+.grid1 .welcome-text {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.grid1 .welcome-text h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+
+.grid1 .welcome-text h1 span {
+    display: block;
+}
+
+.grid1 .welcome-text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--medium-gray);
+    width: 375px;
+}
+
+
+
+.grid1 .learn-more {
+    font-size: 14px;
+    color: var(--medium-gray);
+}
+
+.grid1 button {
+    padding: 12px 22px;
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.grid1 button:hover {
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+    transition: .5s;
+    border: 1px solid var(--almost-black);
+}
+
+.sponsors {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.grid2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-image: url('images/image-hero-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: inherit;
+    
+}
+
+
+.sidebar { 
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    font-size: 17px;
+    transform: translate(100%);
+    transition: ease-out .7s;
+}
+
+.sidebar-active {
+    transform: translate(0);
+    transition: ease-out .7s;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 100px;
+    font-weight: 100;
+    cursor: grab;
+}
+
+.nav-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0 0 40px;
+    gap: 25px;
+}
+
+.nav-bars > section:hover,
+.nav-bars > section:active,
+.nav-bars > li:hover{
+    color: var(--almost-black);
+    cursor: grab;
+    font-weight: 600;
+}
+
+
+
+.title-features, .title-company {
+   display: flex;
+   gap: 7px;
+}
+
+.side-features .list{
+    padding: 20px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+
+.side-features .list li,
+.side-company .list li {
+    color: var(--medium-gray);
+    font-weight: 500;
+}
+
+.side-features .list li:hover, 
+.side-company .list li:hover  {
+    color: var(--almost-black) !important;
+    cursor: grab;
+    font-weight: 600;
+}
+
+
+
+
+.side-features .list span{
+    margin-right: 10px;
+}
+
+.side-company .list{
+    padding: 20px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+
+
+.toggle-active {
+    display: flex !important;
+    transition: ease-in-out .6s;
+    color: var(--almost-black);
+}
+
+.title-bold {
+    font-weight: 600;
+    color: var(--almost-black);
+}
+
+
+.register-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 20px;
+    cursor: grab;
+}
+
+
+.reg {
+    border: 2px solid var(--medium-gray);
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
+.reg:hover {
+    color: white;
+    background-color: var(--medium-gray);
+}
+
